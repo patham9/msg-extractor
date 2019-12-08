@@ -587,7 +587,7 @@ class Message(olefile.OleFileIO):
 
             # Save the message body
             fext = 'json' if toJson else 'text'
-            f = open('message.' + fext, 'w')
+            f = open('message.' + fext, 'w', encoding="utf-8")
             # From, to , cc, subject, date
 
             attachmentNames = []

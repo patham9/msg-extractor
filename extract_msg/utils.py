@@ -120,7 +120,7 @@ def divide(string, length):
 
 
 def fromTimeStamp(stamp):
-    return datetime.datetime.fromtimestamp(stamp, tzlocal.get_localzone())
+    return datetime.datetime.fromtimestamp(stamp)
 
 
 def get_command_args(args):
